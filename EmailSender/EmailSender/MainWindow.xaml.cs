@@ -23,6 +23,9 @@ namespace EmailSender
         public MainWindow()
         {
             InitializeComponent();
+            ESDBContext db = new ESDBContext();
+            var p = db.Books.ToList();
         }
+        
     }
 }
